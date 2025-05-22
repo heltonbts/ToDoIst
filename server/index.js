@@ -10,11 +10,22 @@ server.use(restify.plugins.bodyParser({ mapParams: false, allowDots: true }))
 server.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS')
-    next('')
+    res.header('Access-Control-Allow-Headers', 'Content-Type')
+    return next()
 })
 
 server.get('/', async (req, res) => {
-    await res.send('Hello World')
+    res.send('Hello World')
+})
+
+server.get('/todos', async (req, res) => {
+    const todos = [
+        {
+            text: 'Minha Tarefa',
+        },
+    ]
+
+    res.send(todos)
 })
 
 server.listen(2000, () => {
