@@ -1,0 +1,19 @@
+{
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "To Do Ist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heltonbts/ToDoIst.git"
+  },
+  "author": "Helton Batista",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heltonbts/ToDoIst/issues"
+  },
+  "homepage": "https://github.com/heltonbts/ToDoIst#readme"
+}
